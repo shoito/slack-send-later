@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../vendor/css/bulma.min.css" />
+    <link rel="stylesheet" href="options.css">
+</head>
+<body>
+<div>
+
+    <nav class="navbar is-white">
+        <div class="container">
+            <div class="navbar-brand">
+                <span class="navbar-item brand-text" href="../">Slack Send Later</span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="columns">
+
+            <!-- Main -->
+            <div class="column is-9">
+                <h4>設定</h4>
+                <div id="slack-settings" class="box">
+                    <div class="field is-horizontal">
+                    <div class="field-label is-normal">
+                        <label class="label">Token</label>
+                    </div>
+                    <div class="field-body">
+                        <div class="field">
+                        <div class="control">
+                            <input id="slackToken" class="input" type="password" placeholder="e.g. xoxp-xxx-xxx-xxx-xxx">
+                        </div>
+                        <p class="help">ユーザーとしてメッセージ送信予約をするために入力します。chat:write:userのパーミッションが必要です。<br><a target="blank" href="https://github.com/shoito/slack-send-later/wiki/Slack">トークンの取得方法</a></p>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="field is-horizontal">
+                    <div class="field-label">
+                        <!-- Left empty for spacing -->
+                    </div>
+                    <div class="field-body">
+                        <div class="field">
+                        <div class="control">
+                            <a id="slackApply" class="button is-link">適用</a>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <h4>送信予約リスト(未実装)</h4>
+                <div id="slack-settings" class="box">
+                    <div class="field is-horizontal">
+                        <div class="table-container">
+                            <table class="table">
+                                <tr>
+                                    <th>送信予定日時</th>
+                                    <th>送信メッセージ</th>
+                                    <th>取り消す</th>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="options.js"></script>
+</body>
+</html>

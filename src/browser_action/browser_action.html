@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="../vendor/css/bulma.min.css" />
+	<link rel="stylesheet" href="../vendor/css/bulma-calendar.min.css" />
+	<style type="text/css">
+		body {
+			height: 180px;
+			width: 320px;
+			padding: 12px;
+		}
+
+		.datetimepicker-dummy .datetimepicker-dummy-wrapper .datetimepicker-dummy-input {
+			max-width: 70%;
+		}
+	</style>
+	<script src="../vendor/js/bulma-calendar.min.js"></script>
+</head>
+
+<body>
+	<div class="field">
+		<label class="label is-small">チャンネル</label>
+		<div class="control">
+			<input id="channel" class="input" placeholder="e.g. #sandbox"></input>
+		</div>
+	</div>
+	<div class="field">
+		<label class="label is-small">メッセージ</label>
+		<div class="control">
+			<textarea id="message-text" class="textarea" placeholder="Hello World"></textarea>
+		</div>
+	</div>
+	<div class="field">
+		<div class="control">
+			<label class="label is-small">送信予定日時(ローカル)</label>
+			<input id="time" type="date" data-color="info">
+		</div>
+	</div>
+	<div class="field is-grouped is-grouped-right">
+		<div class="control">
+			<a id="send-button" class="button is-link">
+				送信予約
+			</a>
+		</div>
+	</div>
+	<script src="browser_action.js"></script>
+</body>
+
+</html>

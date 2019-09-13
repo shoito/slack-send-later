@@ -1,0 +1,24 @@
+{
+  "name": "slack-send-later",
+  "version": "0.0.1",
+  "description": "Slack Send Later",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "zip": "zip -r slack-send-later.zip . -x *.git* -x docs/**/* -x *.zip"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shoito/slack-send-later.git"
+  },
+  "author": "@shoito",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shoito/slack-send-later/issues"
+  },
+  "homepage": "https://github.com/shoito/slack-send-later#readme",
+  "dependencies": {
+    "bulma-calendar": "^6.0.7"
+  }
+}

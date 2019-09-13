@@ -1,0 +1,29 @@
+{
+  "name": "Slack Send Later",
+  "short_name": "Slack Send Later",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "Slackへメッセージの予約投稿をするChrome拡張です。",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "options_ui": {
+    "page": "src/options/options.html",
+    "open_in_tab": true
+  },
+  "browser_action": {
+    "default_icon": "icons/icon19.png",
+    "default_title": "Slack Send Later",
+    "default_popup": "src/browser_action/browser_action.html"
+  },
+  "permissions": [
+    "https://slack.com/api/*",
+    "storage"
+  ],
+  "background": {
+    "scripts": ["src/background/background.js"],
+    "persistent": false
+  }
+}
