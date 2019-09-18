@@ -49,6 +49,7 @@ function scheduleMessage(token, channel, message, postAt) {
       channel: channel,
       post_at: postAt,
       text: message,
+      link_names: true,
     }),
     headers: {
       'Content-Type': 'application/json; charset=utf-8',

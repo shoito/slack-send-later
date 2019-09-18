@@ -1,7 +1,7 @@
 {
   "name": "Slack Send Later",
   "short_name": "Slack Send Later",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "manifest_version": 2,
   "description": "Slackへメッセージの予約投稿をするChrome拡張です。",
   "icons": {
