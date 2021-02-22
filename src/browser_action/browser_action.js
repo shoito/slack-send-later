@@ -1,4 +1,4 @@
-bulmaCalendar.attach('[type="date"]', {
+bulmaCalendar.attach('[id="time"]', {
   type: 'datetime',
   lang: 'en',
   dateFormat: 'YYYY-MM-DD',
@@ -7,7 +7,8 @@ bulmaCalendar.attach('[type="date"]', {
   showClearButton: false,
   validateLabel: 'Apply',
   todayLabel: 'Now',
-  cancelLabel: 'Close'
+  cancelLabel: 'Close',
+  showHeader: false,
 });
 
 const timeField = document.getElementById('time');
