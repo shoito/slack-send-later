@@ -1,6 +1,6 @@
 {
   "name": "slack-send-later",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Slack Send Later",
   "directories": {
     "doc": "docs"
