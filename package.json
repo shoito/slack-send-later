@@ -19,6 +19,6 @@
   },
   "homepage": "https://github.com/shoito/slack-send-later#readme",
   "dependencies": {
-    "bulma-calendar": "^6.0.7"
+    "bulma-calendar": "^6.1.19"
   }
 }
